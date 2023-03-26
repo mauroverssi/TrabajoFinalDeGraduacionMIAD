@@ -1,0 +1,12 @@
+
+pip install pandas
+import pandas as pd
+
+# Cargar el archivo Excel en un dataframe, saltando las primeras 15 filas
+df = pd.read_excel('datos/anexo_dptal_pobreza_multidimensional_21.xls', skiprows=range(15))
+
+# Seleccionar solo las filas de la 16 a la 24
+df = df.iloc[15:24]
+
+# Imprimir el dataframe resultante
+print(df)
