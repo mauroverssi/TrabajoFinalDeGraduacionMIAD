@@ -136,8 +136,8 @@ import pyLDAvis
 import pyLDAvis.gensim_models as gensimvis
 
 
-LDA_visualization = gensimvis.prepare(Estimacion, corpus, dictionary)
-LDA_visualization
+LDA_visualization = gensimvis.prepare(Estimacion, list(corpus_sample), dictionary)
+
 
 
 pyLDAvis.show(LDA_visualization)
