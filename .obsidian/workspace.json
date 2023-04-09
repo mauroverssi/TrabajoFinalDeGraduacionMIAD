@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "0f825dcff1bdbcc4",
+        "id": "b4be5b29ea818d99",
         "type": "tabs",
         "children": [
           {
-            "id": "5cbfb498cb8af754",
+            "id": "88643d25f63c44b0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "94a0ed1e793078af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Extraccion y limpieza DANE/README.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -77,6 +60,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "f5f98dbdd86c21cc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -98,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Extraccion y limpieza DANE/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Extraccion y limpieza DANE/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Extraccion y limpieza DANE/README.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -159,19 +146,21 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "94a0ed1e793078af",
+  "active": "88643d25f63c44b0",
   "lastOpenFiles": [
-    "SECOP/datos/df_secop_obra.csv",
-    "SECOP/datos/df_secop_obra.csv.crdownload",
-    "SECOP/datos/SECOP_I_-_Procesos_de_Compra_P_blica.csv",
-    "SECOP/datos/SECOP_Integrado.csv",
-    "SECOP/datos/SECOP_I_-_Procesos_de_Compra_P_blica.csv.crdownload",
-    "SECOP/datos/SECOP_Integrado.csv.crdownload",
-    "SECOP/datos",
-    "SECOP/Nueva carpeta",
-    "SECOP",
-    "Nueva carpeta",
+    "SECOP/scripts/LDAv2.py",
+    "SECOP/scripts/LDA.py",
+    "SECOP/scripts/tmpbyh27ccn",
+    "SECOP/scripts/run_ensemblelda.py",
+    "SECOP/scripts/Sin confirmar 321688.crdownload",
+    "SECOP/scripts/tmpymazv9so",
+    "SECOP/scripts/Genisim.py",
+    "SECOP/scripts/tmpc7jj9aju",
+    "SECOP/scripts/Vari1.py",
+    "SECOP/scripts/tmpgxus6y94",
+    "Dane/hogares (Nacional) 2021/hogares (Nacional) 2021.sav",
+    "Extraccion y limpieza DANE/README.md",
     "README.md",
-    "Extraccion y limpieza DANE/README.md"
+    "Informacion/Using LDA Topic Models as a Classification Model Input  by Marc Kelechava  Towards Data Science.md"
   ]
 }
