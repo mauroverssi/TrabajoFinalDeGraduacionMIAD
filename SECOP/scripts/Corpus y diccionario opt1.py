@@ -10,6 +10,10 @@ Created on Sat Apr  8 17:19:59 2023
 import csv
 import pandas as pd
 from gensim import corpora
+from gensim.utils import simple_preprocess
+from unidecode import unidecode
+from gensim.utils import deaccent
+
 
 from nltk.corpus import stopwords
 lista_stopwords = stopwords.words("spanish")
@@ -52,6 +56,8 @@ def iter_csv_file(filename, column_name):
 
 ## Función para iterar la fila de una columna de un dataframe linea por linea
 
+
+
 def iter_dataframe(df, column_name):
     """
     Esta función toma un DataFrame de pandas y el nombre de una columna y devuelve un iterador que
@@ -63,16 +69,20 @@ def iter_dataframe(df, column_name):
         
     Yields:
         Una lista de los tokens lematizados para cada fila en la columna especificada.
-        
     """
     for line in df[column_name]:
+        # Se eliminan los acentos de las palabras en la línea utilizando unidecode
+        # Tokeniza la línea utilizando simple_preprocess y se eliminan las palabras menores a 3 letras
+        tokens = simple_preprocess(line, deacc=True, min_len=3)
         # Se remueven las stopwords y las palabras que aparecen solo una vez antes de aplicar la lematización
-        doc = [token for token in nlp(line.lower()) if token.text not in lista_stopwords]
+        doc = [token for token in nlp(' '.join(tokens).lower()) if token.text not in lista_stopwords]
         yield [token.lemma_ for token in doc]
 
  
 ## Función para iterar una columna y devolver una lista de lemas
            
+
+
 def iter_column(df, col_name):
     """
     Esta función toma un DataFrame de pandas y el nombre de una columna y devuelve un iterador que
@@ -97,10 +107,14 @@ def iter_column(df, col_name):
     """
     # Itera sobre cada línea en la columna especificada
     for line in df[col_name]:
+        # Se eliminan los acentos de las palabras en la línea utilizando unidecode
+        # Tokeniza la línea utilizando simple_preprocess
+        tokens = simple_preprocess(line, deacc=True,min_len=3)
         # Se remueven las stopwords y las palabras que aparecen solo una vez antes de aplicar la lematización
-        doc = [token for token in nlp(line.lower()) if token.text not in lista_stopwords]
+        doc = [token for token in nlp(' '.join(tokens).lower()) if token.text not in lista_stopwords]
         # Itera sobre cada token en el objeto Doc y devuelve su forma lematizada utilizando el atributo lemma_
         lemmas = [token.lemma_ for token in doc]
+        lemmas = [deaccent(lemma) for lemma in lemmas]
         # Genera una lista de lemas para cada línea en la columna de entrada utilizando la sentencia yield
         yield lemmas
 
@@ -180,11 +194,33 @@ datos = pd.read_csv('datos/df_secop_obra.csv',encoding='utf-8')
 datos['Detalle_Objeto_Contratar']=datos['Detalle_Objeto_Contratar'].astype(str)
 
 ## Crear la muestra
-datos_sample= datos.sample(n=18000, random_state=42)
+datos_sample= datos.sample(n=1000, random_state=42)
 
 ## Crear el diccionario con la muestra
 
+
+
 dictionary = corpora.Dictionary(iter_column(datos_sample, 'Detalle_Objeto_Contratar'))
+
+once_ids = [tokenid for tokenid, docfreq in dictionary.dfs.items() if docfreq == 1]
+
+departamento_list =  ['amazonas', 'antioquia', 'arauca', 'atlantico', 'bolivar', 'boyaca', 'caldas', 'caqueta', 'casanare', 'cauca', 'cesar', 'choco', 'cordoba', 'cundinamarca', 'guainia', 'guaviare', 'huila', 'la_guajira', 'magdalena', 'meta', 'narino', 'norte_de_santander', 'putumayo','quindio', 'risaralda', 'san_andres_y_providencia', 'santander', 'sucre', 'tolima', 'valle_del_cauca', 'vaupes', 'vichada']
+
+stoplist=['municipio', 'municipal', 'departamento']
+
+stoplist = stoplist+departamento_list
+stop_ids = [
+    dictionary.token2id[stopword]
+    for stopword in stoplist
+    if stopword in dictionary.token2id
+]
+
+
+
+dictionary.filter_tokens( once_ids+stop_ids)
+
+
+print(dictionary)
 
 ## Crear corpus con l amuestra
 corpus_sample= MyCorpus_sample(dictionary, datos_sample,'Detalle_Objeto_Contratar' )
@@ -194,6 +230,9 @@ corpus_sample= MyCorpus_sample(dictionary, datos_sample,'Detalle_Objeto_Contrata
 
 from gensim.models import LdaModel
 
+
+# Modelo Simple
+Estimacion=LdaModel(corpus_sample, num_topics=5, id2word=dictionary, passes=10)
 
 
 Estimacion = LdaModel(
@@ -210,10 +249,14 @@ Estimacion = LdaModel(
 )
 
 
+top_topics = Estimacion.top_topics(corpus_sample)
+num_topics=5
+# Average topic coherence is the sum of topic coherences of all topics, divided by the number of topics.
+avg_topic_coherence = sum([t[1] for t in top_topics]) / num_topics
+print('Average topic coherence: %.4f.' % avg_topic_coherence)
+
 from pprint import pprint
-
-pprint(Estimacion.print_topics())
-
+pprint(top_topics)
 
 # Visualizamos los resultados
 import pyLDAvis
@@ -227,9 +270,7 @@ LDA_visualization = gensimvis.prepare(Estimacion, list(corpus_sample), dictionar
 pyLDAvis.show(LDA_visualization)
 
 pyLDAvis.save_html(LDA_visualization, 'lda.HTML')
-
-
-
+ 
 
 
 
