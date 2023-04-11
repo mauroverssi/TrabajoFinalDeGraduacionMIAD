@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"type":"group","id":"d254444d45659d45","x":-1000,"y":-320,"width":2040,"height":1860,"label":"Optimización de diccionario"},
+		{"type":"text","text":"# Modelo LDA","id":"e50b6c8d651b7b38","x":1960,"y":-740,"width":250,"height":60},
+		{"type":"text","text":"### Dicionario","id":"4a0d6cc83fdb7a1d","x":-5,"y":420,"width":250,"height":60},
+		{"type":"text","text":"Se filtran del diccionario las siguientes tokens: \n1. `Stop_ids`: lista de id de los tokens de palabras que queremos sacar del analísis por ejemplo municipio, municipal, departamento o los nombres de todos los departamentos\n2. `once_ids`= lista de ids de los tokens de palabras que tienen una frencuencia igual a 1 en el diccionario. Esto solo se hace una vez, \n3. _¿Sinonimos?_","id":"bbf47fc10aa1e537","x":-5,"y":622,"width":505,"height":278},
+		{"type":"text","text":"### Diccionario Filtrado","id":"eb90c560d9f7535b","x":120,"y":1021,"width":280,"height":60},
+		{"type":"text","text":"Corpus","id":"9bac1fadb83e3e3b","x":-780,"y":1021,"width":280,"height":60},
+		{"type":"text","text":"LDA Simple:\n1. 5 tópicos\n2. 10 passes","id":"efe62853ab9f5017","x":-360,"y":1220,"width":250,"height":120},
+		{"type":"text","text":"Visualización de tópicos","id":"b8d990964898531a","x":420,"y":1460,"width":250,"height":60},
+		{"type":"text","text":"Interaciones","id":"5ceb38cb7344b001","x":1038,"y":1762,"width":250,"height":60},
+		{"type":"text","text":"# Optimización y calibración de modelo LDA\n\n- Bigramas o trigamas\n- Chuncks\n- Iteraciones\n- Passes\n- Etc","id":"bfed43040912e20d","x":960,"y":1960,"width":480,"height":260},
+		{"type":"text","text":"Lectura línea por linea  la columna `Detalle_Objeto_Contratar`  y se realizan los siguiente procesos en simultaneo\n1.  La funcion  `simple_preprocess` transforma las palabras en minusculas, quita acentos y quita las palabras menores a 3 letras\n2. Se vuelven a unir las palabras en una sola lista, se retiran las stopwords y se tokeniza\n3. Lemantización\n4. Se retiran los acentos de los lema con la funcion `deaccent ( )`\n","id":"0616b113772cebb1","x":-160,"y":-100,"width":560,"height":260},
+		{"type":"text","text":"## Muestra","id":"4e6746c875a101bc","x":-160,"y":-300,"width":250,"height":100},
+		{"type":"text","text":"### Carga de datos","id":"31062d17d6e8f60b","x":-580,"y":-300,"width":260,"height":60},
+		{"type":"text","text":"# Corpus con todos los datos","id":"1a5cf98cdb953e8f","x":1400,"y":-680,"width":250,"height":167},
+		{"type":"text","text":"# Creación de diccionario con todos los datos y usar metodo save()","id":"14442ab4198fdbd4","x":1340,"y":-960,"width":440,"height":146}
+	],
+	"edges":[
+		{"id":"4e5320b7e667f1a6","fromNode":"31062d17d6e8f60b","fromSide":"right","toNode":"4e6746c875a101bc","toSide":"left"},
+		{"id":"5371984991382612","fromNode":"4e6746c875a101bc","fromSide":"bottom","toNode":"0616b113772cebb1","toSide":"top","label":"iter_column"},
+		{"id":"10762180ea248ddc","fromNode":"0616b113772cebb1","fromSide":"bottom","toNode":"4a0d6cc83fdb7a1d","toSide":"top","label":"corpora.Dictionary"},
+		{"id":"aff6684c7675b905","fromNode":"4a0d6cc83fdb7a1d","fromSide":"bottom","toNode":"bbf47fc10aa1e537","toSide":"top","label":"filtrado"},
+		{"id":"2226a268e81cd14e","fromNode":"bbf47fc10aa1e537","fromSide":"bottom","toNode":"eb90c560d9f7535b","toSide":"top","label":"filter_tokens"},
+		{"id":"544e772dc7f646db","fromNode":"4e6746c875a101bc","fromSide":"left","toNode":"9bac1fadb83e3e3b","toSide":"left","label":"My_corpus_sample"},
+		{"id":"941fd6a53ca00400","fromNode":"9bac1fadb83e3e3b","fromSide":"right","toNode":"efe62853ab9f5017","toSide":"top"},
+		{"id":"4f610f4cfbb9046f","fromNode":"eb90c560d9f7535b","fromSide":"left","toNode":"efe62853ab9f5017","toSide":"top"},
+		{"id":"cb967bcb275930a0","fromNode":"efe62853ab9f5017","fromSide":"bottom","toNode":"b8d990964898531a","toSide":"top"},
+		{"id":"608f00d467142459","fromNode":"b8d990964898531a","fromSide":"right","toNode":"bbf47fc10aa1e537","toSide":"right","label":"Nuevas palabras para filtrar"},
+		{"id":"e72d8cff764be8bc","fromNode":"d254444d45659d45","fromSide":"bottom","toNode":"bfed43040912e20d","toSide":"left"},
+		{"id":"cb304fbfa3cb302d","fromNode":"31062d17d6e8f60b","fromSide":"top","toNode":"14442ab4198fdbd4","toSide":"left"},
+		{"id":"37b8b19abc7db380","fromNode":"31062d17d6e8f60b","fromSide":"right","toNode":"1a5cf98cdb953e8f","toSide":"left","label":"My_Corpus"},
+		{"id":"a813623982a11dfe","fromNode":"1a5cf98cdb953e8f","fromSide":"right","toNode":"e50b6c8d651b7b38","toSide":"left"},
+		{"id":"2cf57bb53509c7af","fromNode":"14442ab4198fdbd4","fromSide":"right","toNode":"e50b6c8d651b7b38","toSide":"left"},
+		{"id":"0e457b1953d89f0a","fromNode":"bfed43040912e20d","fromSide":"right","toNode":"e50b6c8d651b7b38","toSide":"bottom"},
+		{"id":"9ee878d8b5c1403b","fromNode":"bfed43040912e20d","fromSide":"top","toNode":"5ceb38cb7344b001","toSide":"bottom"},
+		{"id":"5c3b210535b6ca05","fromNode":"5ceb38cb7344b001","fromSide":"left","toNode":"bfed43040912e20d","toSide":"left"}
+	]
+}

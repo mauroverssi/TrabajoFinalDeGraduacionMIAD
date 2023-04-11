@@ -11,7 +11,6 @@ import csv
 import pandas as pd
 from gensim import corpora
 from gensim.utils import simple_preprocess
-from unidecode import unidecode
 from gensim.utils import deaccent
 
 
@@ -71,8 +70,7 @@ def iter_dataframe(df, column_name):
         Una lista de los tokens lematizados para cada fila en la columna especificada.
     """
     for line in df[column_name]:
-        # Se eliminan los acentos de las palabras en la línea utilizando unidecode
-        # Tokeniza la línea utilizando simple_preprocess y se eliminan las palabras menores a 3 letras
+        # Tokeniza la línea utilizando simple_preprocess y se eliminan las palabras menores a 3 letras y los acentos
         tokens = simple_preprocess(line, deacc=True, min_len=3)
         # Se remueven las stopwords y las palabras que aparecen solo una vez antes de aplicar la lematización
         doc = [token for token in nlp(' '.join(tokens).lower()) if token.text not in lista_stopwords]
