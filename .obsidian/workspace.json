@@ -157,8 +157,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "88643d25f63c44b0",
+  "active": "4f5f53d27e603111",
   "lastOpenFiles": [
+    "HOla mundo.txt",
+    "Nuevo Documento de texto.txt",
     "SECOP/scripts/tmpayqxzg5u",
     "SECOP/scripts/Versiones viejas/ETL_SECOP.ipynb",
     "SECOP/scripts/Versiones viejas/LDAv2.py",
@@ -169,8 +171,6 @@
     "SECOP/scripts/tmp0r54urxl",
     "SECOP/scripts/LDAv2.py",
     "SECOP/scripts/LDA.py",
-    "SECOP/scripts/tmpbyh27ccn",
-    "SECOP/scripts/run_ensemblelda.py",
     "Extraccion y limpieza DANE/README.md",
     "README.md",
     "Informacion/Using LDA Topic Models as a Classification Model Input  by Marc Kelechava  Towards Data Science.md"
