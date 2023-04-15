@@ -19,6 +19,7 @@ lista_stopwords = stopwords.words("spanish")
 
 import spacy
 
+## es_
 nlp = spacy.load("es_core_news_md")
 
 # Funciones
@@ -53,9 +54,7 @@ def iter_csv_file(filename, column_name):
         for row in reader:
             yield row[column_name]
 
-## Función para iterar la fila de una columna de un dataframe linea por linea
-
-
+## Función para iterar la fila de una columna de un dataframe linea por linea, se utiliza para generar el corpus
 
 def iter_dataframe(df, column_name):
     """
@@ -77,7 +76,7 @@ def iter_dataframe(df, column_name):
         yield [token.lemma_ for token in doc]
 
  
-## Función para iterar una columna y devolver una lista de lemas
+## Función para iterar una columna y devolver una lista de lemas se utiliza para generar el diccionario
            
 
 
@@ -192,7 +191,7 @@ datos = pd.read_csv('datos/df_secop_obra.csv',encoding='utf-8')
 datos['Detalle_Objeto_Contratar']=datos['Detalle_Objeto_Contratar'].astype(str)
 
 ## Crear la muestra
-datos_sample= datos.sample(n=1000, random_state=42)
+datos_sample= datos.sample(n=1800, random_state=42)
 
 ## Crear el diccionario con la muestra
 
@@ -204,16 +203,20 @@ once_ids = [tokenid for tokenid, docfreq in dictionary.dfs.items() if docfreq ==
 
 departamento_list =  ['amazonas', 'antioquia', 'arauca', 'atlantico', 'bolivar', 'boyaca', 'caldas', 'caqueta', 'casanare', 'cauca', 'cesar', 'choco', 'cordoba', 'cundinamarca', 'guainia', 'guaviare', 'huila', 'la_guajira', 'magdalena', 'meta', 'narino', 'norte_de_santander', 'putumayo','quindio', 'risaralda', 'san_andres_y_providencia', 'santander', 'sucre', 'tolima', 'valle_del_cauca', 'vaupes', 'vichada']
 
-stoplist=['municipio', 'municipal', 'departamento']
+stoplist=['municipio', 'municipal', 'departamento', 'san', 'jose'] ##Incluir otras palabras
 
+
+#Generar una sola lista de palabras a filtrar
 stoplist = stoplist+departamento_list
+
+#Extraer los ids de las palabras de la listas de stoplist que coinciden con las palabras del diccionario
 stop_ids = [
     dictionary.token2id[stopword]
     for stopword in stoplist
     if stopword in dictionary.token2id
 ]
 
-
+#Funcion de filtrado
 
 dictionary.filter_tokens( once_ids+stop_ids)
 
@@ -230,28 +233,12 @@ from gensim.models import LdaModel
 
 
 # Modelo Simple
-Estimacion=LdaModel(corpus_sample, num_topics=5, id2word=dictionary, passes=10)
+Estimacion=LdaModel(corpus_sample, num_topics=5, id2word=dictionary, passes=10,eval_every = None )
 
-
-Estimacion = LdaModel(
-    corpus=corpus_sample,
-    id2word=dictionary,
-    num_topics=10,
-    chunksize=1000,
-    passes=20,
-    iterations=400,
-    alpha='auto',
-    eta='auto',
-    random_state=123,
-    eval_every=None
-)
 
 
 top_topics = Estimacion.top_topics(corpus_sample)
 num_topics=5
-# Average topic coherence is the sum of topic coherences of all topics, divided by the number of topics.
-avg_topic_coherence = sum([t[1] for t in top_topics]) / num_topics
-print('Average topic coherence: %.4f.' % avg_topic_coherence)
 
 from pprint import pprint
 pprint(top_topics)

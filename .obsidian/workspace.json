@@ -15,9 +15,9 @@
               "state": {
                 "file": "LDA.canvas",
                 "viewState": {
-                  "x": 868.1231603183111,
-                  "y": 1142.8494273328583,
-                  "zoom": -0.5249999936421714
+                  "x": 592.1156503680264,
+                  "y": 881.1648365376652,
+                  "zoom": -1.9205655325055955
                 }
               }
             }
@@ -159,6 +159,7 @@
   },
   "active": "88643d25f63c44b0",
   "lastOpenFiles": [
+    "SECOP/scripts/tmpayqxzg5u",
     "SECOP/scripts/Versiones viejas/ETL_SECOP.ipynb",
     "SECOP/scripts/Versiones viejas/LDAv2.py",
     "SECOP/scripts/Versiones viejas/Carga de datos.py",
@@ -170,7 +171,6 @@
     "SECOP/scripts/LDA.py",
     "SECOP/scripts/tmpbyh27ccn",
     "SECOP/scripts/run_ensemblelda.py",
-    "SECOP/scripts/Sin confirmar 321688.crdownload",
     "Extraccion y limpieza DANE/README.md",
     "README.md",
     "Informacion/Using LDA Topic Models as a Classification Model Input  by Marc Kelechava  Towards Data Science.md"
