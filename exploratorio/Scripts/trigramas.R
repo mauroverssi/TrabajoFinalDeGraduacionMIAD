@@ -29,7 +29,7 @@ trigramas <-trigramas %>%
 trigramas %>%
   unite(trigram, word1, word2,word3, sep = " ")%>%
   slice(-c(1))%>%
-  filter(n >=200) %>%
+  filter(n >=300) %>%
   mutate(pct = prop.table(n))%>%
   mutate(trigram = reorder(trigram, n)) %>%
   ggplot(aes(trigram, n,fill=n)) +
@@ -39,11 +39,11 @@ trigramas %>%
     , colour="white")+
   coord_flip()+
   ylab("Frecuencia")+
-  xlab("Bigramas más frecuentes (n >= 1.500 menciones)")+
+  xlab("Trigramas más frecuentes (n >= 300 menciones)")+
   escala_fill_bn(paleta = "logo", guide = "none", discrete =FALSE)
 
-bigramas %>%
-  filter(n >= 1000) %>%
+trigramas %>%
+  filter(n >= 300) %>%
   graph_from_data_frame() %>%
   ggraph( layout = "fr") +
   geom_edge_link() +
@@ -51,9 +51,9 @@ bigramas %>%
   geom_node_text(aes(label = name), vjust = 1, hjust = 1)
 
 a <- grid::arrow(type = "closed", length = unit(.15, "inches"))
-bigramas %>%
+trigramas %>%
   slice(-c(1))%>%
-  filter(n >= 1000) %>%
+  filter(n >= 200) %>%
   graph_from_data_frame() %>%
   ggraph( layout = "fr") +
   geom_edge_link(aes(edge_alpha = n), show.legend = FALSE,
@@ -62,3 +62,17 @@ bigramas %>%
   geom_node_text(aes(label = name), vjust = 1, hjust = 1) +
   theme_void()
 
+library(igraph)
+library(tidyverse)
+
+# Crear un grafo vacío
+g <- graph.empty(n = 0, directed = TRUE)
+
+# Agregar los nodos y aristas
+for (i in 1:nrow(trigramas)) {
+  g <- g + vertices(trigramas$word1[i]) + vertices(trigramas$word2[i]) + vertices(trigramas$word3[i])
+  g <- g + path(trigramas$word1[i], trigramas$word2[i], trigramas$word3[i], edge.attr = list(weight = trigramas$n[i]))
+}
+
+# Eliminar duplicados de vértices
+g <- simplify(g, remove.multiple = FALSE, edge.attr.comb = "sum")

@@ -11,7 +11,7 @@
 
 ## Eliminación de stopwords
 
-- Se eliminan las stopwords comunes, cadntidad de palabras: 5.6677.725
+- Se eliminan las stopwords comunes, cadntidad de palabras: 5.677.725
 - Se eliminan las listas de palabras stoplist y departamentos
 
 ## Top de palabras más frecuents
