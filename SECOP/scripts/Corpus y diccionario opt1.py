@@ -186,6 +186,20 @@ class MyCorpus_sample():
 ## Carga de datos en en un dataframe
 datos = pd.read_csv('datos/df_secop_obra.csv',encoding='utf-8')
 
+# Lectura de la información de archivo departamentos
+df_dpto = pd.read_csv('./datos/Regiones_Departamentos.csv', sep=';')
+df_dpto = list(iter_column(df_dpto, 'Dpto_SECOP'))
+lista_dpto = []
+for i in df_dpto:
+    lista_dpto = lista_dpto + i
+lista_dpto = list(set(lista_dpto))
+# Lectura de la información de archivo municipios
+df_municipio = pd.read_csv('./datos/Departamentos_y_municipios_de_Colombia.csv', sep=',')
+df_municipio = list(iter_column(df_municipio, 'MUNICIPIO'))
+lista_municipio = []
+for i in df_municipio:
+    lista_municipio = lista_municipio + i
+lista_municipio = list(set(lista_municipio))
 
 ## Pasar la columna Detalle_Objeto_Contratar de object a string porque sino da un error
 datos['Detalle_Objeto_Contratar']=datos['Detalle_Objeto_Contratar'].astype(str)
@@ -201,13 +215,13 @@ dictionary = corpora.Dictionary(iter_column(datos_sample, 'Detalle_Objeto_Contra
 
 once_ids = [tokenid for tokenid, docfreq in dictionary.dfs.items() if docfreq == 1]
 
-departamento_list =  ['amazonas', 'antioquia', 'arauca', 'atlantico', 'bolivar', 'boyaca', 'caldas', 'caqueta', 'casanare', 'cauca', 'cesar', 'choco', 'cordoba', 'cundinamarca', 'guainia', 'guaviare', 'huila', 'la_guajira', 'magdalena', 'meta', 'narino', 'norte_de_santander', 'putumayo','quindio', 'risaralda', 'san_andres_y_providencia', 'santander', 'sucre', 'tolima', 'valle_del_cauca', 'vaupes', 'vichada']
+
 
 stoplist=['municipio', 'municipal', 'departamento', 'san', 'jose'] ##Incluir otras palabras
 
 
 #Generar una sola lista de palabras a filtrar
-stoplist = stoplist+departamento_list
+stoplist = stoplist+lista_dpto+lista_municipio
 
 #Extraer los ids de las palabras de la listas de stoplist que coinciden con las palabras del diccionario
 stop_ids = [
@@ -249,7 +263,6 @@ import pyLDAvis.gensim_models as gensimvis
 
 
 LDA_visualization = gensimvis.prepare(Estimacion, list(corpus_sample), dictionary)
-
 
 
 pyLDAvis.show(LDA_visualization)

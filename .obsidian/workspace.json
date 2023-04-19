@@ -4,21 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "b4be5b29ea818d99",
+        "id": "74fc5fd3ef0306d9",
         "type": "tabs",
         "children": [
           {
-            "id": "88643d25f63c44b0",
+            "id": "ebf9229fb28764a1",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "LDA.canvas",
-                "viewState": {
-                  "x": 592.1156503680264,
-                  "y": 881.1648365376652,
-                  "zoom": -1.9205655325055955
-                }
+                "file": "exploratorio/README.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -96,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LDA.canvas",
+                "file": "exploratorio/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LDA.canvas",
+                "file": "exploratorio/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LDA.canvas"
+                "file": "exploratorio/README.md"
               }
             }
           }
@@ -157,20 +154,28 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "4f5f53d27e603111",
+  "active": "ebf9229fb28764a1",
   "lastOpenFiles": [
-    "HOla mundo.txt",
-    "Nuevo Documento de texto.txt",
-    "SECOP/scripts/tmpayqxzg5u",
-    "SECOP/scripts/Versiones viejas/ETL_SECOP.ipynb",
-    "SECOP/scripts/Versiones viejas/LDAv2.py",
-    "SECOP/scripts/Versiones viejas/Carga de datos.py",
-    "SECOP/scripts/Versiones viejas/Corpus y diccionario.py",
-    "SECOP/scripts/tmp3tt0pirg",
+    "SECOP/scripts/tmph06ag7x6",
+    "SECOP/datos/Departamentos_y_municipios_de_Colombia.csv",
+    "SECOP/datos/Regiones_Departamentos.csv",
+    "exploratorio/adjuntos/Pasted image 20230418161717.png",
+    "SECOP/stopwords/Departamentos_y_municipios_de_Colombia.csv",
+    "SECOP/stopwords/Regiones_Departamentos.csv",
+    "SECOP/stopwords",
+    "SECOP/Nueva carpeta",
+    "SECOP/scripts/tmp8_4dxpvb",
+    "SECOP/scripts/parche.py",
+    "SECOP/scripts/tmp7z6gttio",
+    "exploratorio/Scripts/trigramas.R",
+    "exploratorio/adjuntos/Pasted image 20230416145031.png",
+    "exploratorio/adjuntos/Pasted image 20230416144509.png",
+    "exploratorio/adjuntos/Pasted image 20230416143929.png",
+    "exploratorio/adjuntos/Pasted image 20230416140053.png",
+    "exploratorio/README.md",
+    "exploratorio/Pasted image 20230416135938.png",
+    "Analísis exploratorio/README.md",
     "LDA.canvas",
-    "SECOP/scripts/tmp0r54urxl",
-    "SECOP/scripts/LDAv2.py",
-    "SECOP/scripts/LDA.py",
     "Extraccion y limpieza DANE/README.md",
     "README.md",
     "Informacion/Using LDA Topic Models as a Classification Model Input  by Marc Kelechava  Towards Data Science.md"
