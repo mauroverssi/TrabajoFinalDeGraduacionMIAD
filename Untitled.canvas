@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"60135771667c48c0","x":-360,"y":-180,"width":480,"height":240,"type":"text","text":"- Función de validación de tópicos\n- LDA con bigramas y trigramas. \n- LDA optimizado. \n- Optimización de hyperparametros de LDA. "}
+	],
+	"edges":[]
+}
