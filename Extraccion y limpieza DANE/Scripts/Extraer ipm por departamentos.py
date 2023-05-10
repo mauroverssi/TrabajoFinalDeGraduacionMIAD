@@ -10,7 +10,7 @@ import pandas as pd
 
 #IPM Regiones
 # Ruta al archivo Excel
-ruta_archivo = "datos/anexo_dptal_pobreza_multidimensional_21.xls"
+ruta_archivo = "G:\Unidades compartidas\Mau\TrabajoFinalDeGraduacionMIAD\Extraccion y limpieza DANE\datos\anexo_dptal_pobreza_multidimensional_21.xls"
 
 # Nombre de la hoja donde están los datos
 nombre_hoja = "IPM_Departamentos"
@@ -29,7 +29,7 @@ nuevos_nombres = ['region', 'total', 'cabeceras', 'centros_poblados_rural_disper
 # Asignar los nuevos nombres de las columnas al DataFrame
 ipm_departamentos.columns = nuevos_nombres
 
-
+#Separar por año
 ipm_departamentos_2018 = ipm_departamentos.iloc[:, :4]
 ipm_departamentos_2019 = ipm_departamentos.iloc[:, [0, 4, 5, 6]]
 ipm_departamentos_2020 = ipm_departamentos.iloc[:, [0, 7, 8, 9]]
@@ -69,3 +69,5 @@ departamentos.to_csv('salidas/departamentos.csv', index=False)
 
 # Guardar el DataFrame ipm_departamentos_final como un archivo CSV
 ipm_departamentos_final.to_csv('salidas/ipm_departamentos_final.csv', index=False)
+
+#%%

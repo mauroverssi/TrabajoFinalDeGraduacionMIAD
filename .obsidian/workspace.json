@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "74fc5fd3ef0306d9",
+        "id": "867a83195569692b",
         "type": "tabs",
         "children": [
           {
-            "id": "ebf9229fb28764a1",
+            "id": "cdf184f239169e3b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a197bdca71644985",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ModeloLDA/Calibración del modelo - Indicadores.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "40eab8ed873e7a5e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ModeloLDA/Optimización de Modelo LDA.md",
+                "file": "ModeloLDA/Funciones.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ModeloLDA/Optimización de Modelo LDA.md",
+                "file": "ModeloLDA/Funciones.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ModeloLDA/Optimización de Modelo LDA.md",
+                "file": "ModeloLDA/Funciones.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ModeloLDA/Optimización de Modelo LDA.md"
+                "file": "ModeloLDA/Funciones.md"
               }
             }
           }
@@ -179,8 +154,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "40eab8ed873e7a5e",
+  "active": "4f5f53d27e603111",
   "lastOpenFiles": [
+    "ModeloLDA/Funciones.md",
+    "ModeloLDA/Optimización de Modelo LDA.md",
+    "ModeloLDA/Calibración del modelo - Indicadores.md",
+    "README.md",
     "SECOP/Modelo LDA.ipynb.tmp",
     "SECOP/Modelo LDA.ipynb~",
     "SECOP/optimal_p1.HTML",
@@ -190,12 +169,8 @@
     "SECOP/optimal_lda_model3.HTML",
     "SECOP/optimal_lda_model2.HTML",
     "SECOP/optimal_lda_model1.HTML",
-    "ModeloLDA/Calibración del modelo - Indicadores.md",
-    "ModeloLDA/Optimización de Modelo LDA.md",
     "Untitled.canvas",
     "SECOP/Modelo_LDA_Proyecto_Aplicado.ipynb.tmp",
-    "SECOP/lda_8.HTML",
-    "README.md",
     "exploratorio/README.md",
     "exploratorio/adjuntos/Pasted image 20230418161717.png",
     "exploratorio/adjuntos/Pasted image 20230416145031.png",

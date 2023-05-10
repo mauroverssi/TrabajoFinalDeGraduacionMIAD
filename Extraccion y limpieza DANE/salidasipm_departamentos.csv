@@ -1,0 +1,397 @@
+departamento,ipm,tipo,año
+Antioquia,15.3,total,2018
+Atlántico,21.1,total,2018
+Bogotá D.C.,4.1,total,2018
+Bolívar,31.9,total,2018
+Boyacá,16.5,total,2018
+Caldas,13.8,total,2018
+Caquetá,26.9,total,2018
+Cauca,27.7,total,2018
+Cesar,31.7,total,2018
+Córdoba,34.4,total,2018
+Cundinamarca,10.5,total,2018
+Chocó,46.3,total,2018
+Huila,18.0,total,2018
+La Guajira,53.3,total,2018
+Magdalena,36.4,total,2018
+Meta,15.6,total,2018
+Nariño,33.1,total,2018
+Norte de Santander,29.5,total,2018
+Quindío,14.2,total,2018
+Risaralda,11.6,total,2018
+Santander,12.6,total,2018
+Sucre,41.7,total,2018
+Tolima,22.2,total,2018
+Valle del Cauca,14.1,total,2018
+Arauca,27.6,total,2018
+Casanare,19.0,total,2018
+Putumayo,24.1,total,2018
+San Andrés,8.5,total,2018
+Amazonas,35.4,total,2018
+Guainía,60.6,total,2018
+Guaviare,31.4,total,2018
+Vaupés,68.5,total,2018
+Vichada,63.5,total,2018
+Antioquia,9.6,cabeceras,2018
+Atlántico,20.0,cabeceras,2018
+Bogotá D.C.,4.1,cabeceras,2018
+Bolívar,25.6,cabeceras,2018
+Boyacá,7.9,cabeceras,2018
+Caldas,10.1,cabeceras,2018
+Caquetá,20.5,cabeceras,2018
+Cauca,13.2,cabeceras,2018
+Cesar,26.5,cabeceras,2018
+Córdoba,21.1,cabeceras,2018
+Cundinamarca,6.8,cabeceras,2018
+Chocó,29.4,cabeceras,2018
+Huila,12.1,cabeceras,2018
+La Guajira,31.3,cabeceras,2018
+Magdalena,31.1,cabeceras,2018
+Meta,10.7,cabeceras,2018
+Nariño,22.0,cabeceras,2018
+Norte de Santander,25.9,cabeceras,2018
+Quindío,13.5,cabeceras,2018
+Risaralda,7.0,cabeceras,2018
+Santander,8.2,cabeceras,2018
+Sucre,32.8,cabeceras,2018
+Tolima,11.8,cabeceras,2018
+Valle del Cauca,12.5,cabeceras,2018
+Arauca,24.6,cabeceras,2018
+Casanare,14.5,cabeceras,2018
+Putumayo,17.5,cabeceras,2018
+San Andrés,8.5,cabeceras,2018
+Amazonas,27.4,cabeceras,2018
+Guainía,44.0,cabeceras,2018
+Guaviare,22.8,cabeceras,2018
+Vaupés,27.4,cabeceras,2018
+Vichada,33.7,cabeceras,2018
+Antioquia,35.4,centros_poblados_rural_disperso,2018
+Atlántico,39.5,centros_poblados_rural_disperso,2018
+Bogotá D.C.,19.2,centros_poblados_rural_disperso,2018
+Bolívar,50.5,centros_poblados_rural_disperso,2018
+Boyacá,28.5,centros_poblados_rural_disperso,2018
+Caldas,24.6,centros_poblados_rural_disperso,2018
+Caquetá,38.6,centros_poblados_rural_disperso,2018
+Cauca,36.2,centros_poblados_rural_disperso,2018
+Cesar,47.6,centros_poblados_rural_disperso,2018
+Córdoba,49.2,centros_poblados_rural_disperso,2018
+Cundinamarca,20.0,centros_poblados_rural_disperso,2018
+Chocó,60.3,centros_poblados_rural_disperso,2018
+Huila,27.0,centros_poblados_rural_disperso,2018
+La Guajira,72.9,centros_poblados_rural_disperso,2018
+Magdalena,48.5,centros_poblados_rural_disperso,2018
+Meta,31.4,centros_poblados_rural_disperso,2018
+Nariño,41.7,centros_poblados_rural_disperso,2018
+Norte de Santander,43.0,centros_poblados_rural_disperso,2018
+Quindío,19.0,centros_poblados_rural_disperso,2018
+Risaralda,28.0,centros_poblados_rural_disperso,2018
+Santander,26.8,centros_poblados_rural_disperso,2018
+Sucre,56.8,centros_poblados_rural_disperso,2018
+Tolima,44.7,centros_poblados_rural_disperso,2018
+Valle del Cauca,23.2,centros_poblados_rural_disperso,2018
+Arauca,33.3,centros_poblados_rural_disperso,2018
+Casanare,29.6,centros_poblados_rural_disperso,2018
+Putumayo,30.8,centros_poblados_rural_disperso,2018
+San Andrés,,centros_poblados_rural_disperso,2018
+Amazonas,42.1,centros_poblados_rural_disperso,2018
+Guainía,72.6,centros_poblados_rural_disperso,2018
+Guaviare,42.1,centros_poblados_rural_disperso,2018
+Vaupés,82.9,centros_poblados_rural_disperso,2018
+Vichada,73.0,centros_poblados_rural_disperso,2018
+Antioquia,15.7,total,2019
+Atlántico,14.9,total,2019
+Bogotá D.C.,7.1,total,2019
+Bolívar,26.9,total,2019
+Boyacá,12.8,total,2019
+Caldas,14.3,total,2019
+Caquetá,25.7,total,2019
+Cauca,24.0,total,2019
+Cesar,25.5,total,2019
+Córdoba,34.7,total,2019
+Cundinamarca,12.3,total,2019
+Chocó,42.3,total,2019
+Huila,18.3,total,2019
+La Guajira,48.8,total,2019
+Magdalena,31.6,total,2019
+Meta,19.1,total,2019
+Nariño,23.2,total,2019
+Norte de Santander,24.2,total,2019
+Quindío,10.2,total,2019
+Risaralda,11.1,total,2019
+Santander,12.4,total,2019
+Sucre,33.3,total,2019
+Tolima,15.2,total,2019
+Valle del Cauca,10.8,total,2019
+Arauca,23.3,total,2019
+Casanare,18.3,total,2019
+Putumayo,25.4,total,2019
+San Andrés,8.2,total,2019
+Amazonas,35.6,total,2019
+Guainía,67.0,total,2019
+Guaviare,30.9,total,2019
+Vaupés,66.5,total,2019
+Vichada,72.2,total,2019
+Antioquia,10.2,cabeceras,2019
+Atlántico,13.7,cabeceras,2019
+Bogotá D.C.,7.1,cabeceras,2019
+Bolívar,21.4,cabeceras,2019
+Boyacá,5.0,cabeceras,2019
+Caldas,10.4,cabeceras,2019
+Caquetá,19.2,cabeceras,2019
+Cauca,10.6,cabeceras,2019
+Cesar,20.5,cabeceras,2019
+Córdoba,23.2,cabeceras,2019
+Cundinamarca,9.4,cabeceras,2019
+Chocó,26.7,cabeceras,2019
+Huila,12.5,cabeceras,2019
+La Guajira,28.1,cabeceras,2019
+Magdalena,24.6,cabeceras,2019
+Meta,17.8,cabeceras,2019
+Nariño,18.4,cabeceras,2019
+Norte de Santander,19.3,cabeceras,2019
+Quindío,9.1,cabeceras,2019
+Risaralda,6.5,cabeceras,2019
+Santander,8.8,cabeceras,2019
+Sucre,25.4,cabeceras,2019
+Tolima,8.4,cabeceras,2019
+Valle del Cauca,9.3,cabeceras,2019
+Arauca,20.5,cabeceras,2019
+Casanare,15.1,cabeceras,2019
+Putumayo,22.1,cabeceras,2019
+San Andrés,8.2,cabeceras,2019
+Amazonas,19.5,cabeceras,2019
+Guainía,39.9,cabeceras,2019
+Guaviare,26.5,cabeceras,2019
+Vaupés,25.4,cabeceras,2019
+Vichada,35.7,cabeceras,2019
+Antioquia,35.9,centros_poblados_rural_disperso,2019
+Atlántico,38.0,centros_poblados_rural_disperso,2019
+Bogotá D.C.,16.5,centros_poblados_rural_disperso,2019
+Bolívar,42.9,centros_poblados_rural_disperso,2019
+Boyacá,23.9,centros_poblados_rural_disperso,2019
+Caldas,25.8,centros_poblados_rural_disperso,2019
+Caquetá,37.7,centros_poblados_rural_disperso,2019
+Cauca,31.8,centros_poblados_rural_disperso,2019
+Cesar,40.7,centros_poblados_rural_disperso,2019
+Córdoba,47.2,centros_poblados_rural_disperso,2019
+Cundinamarca,20.5,centros_poblados_rural_disperso,2019
+Chocó,55.1,centros_poblados_rural_disperso,2019
+Huila,27.1,centros_poblados_rural_disperso,2019
+La Guajira,68.2,centros_poblados_rural_disperso,2019
+Magdalena,47.8,centros_poblados_rural_disperso,2019
+Meta,23.1,centros_poblados_rural_disperso,2019
+Nariño,26.9,centros_poblados_rural_disperso,2019
+Norte de Santander,42.8,centros_poblados_rural_disperso,2019
+Quindío,18.0,centros_poblados_rural_disperso,2019
+Risaralda,28.2,centros_poblados_rural_disperso,2019
+Santander,24.1,centros_poblados_rural_disperso,2019
+Sucre,46.6,centros_poblados_rural_disperso,2019
+Tolima,30.0,centros_poblados_rural_disperso,2019
+Valle del Cauca,19.4,centros_poblados_rural_disperso,2019
+Arauca,28.6,centros_poblados_rural_disperso,2019
+Casanare,26.2,centros_poblados_rural_disperso,2019
+Putumayo,28.7,centros_poblados_rural_disperso,2019
+San Andrés,,centros_poblados_rural_disperso,2019
+Amazonas,49.6,centros_poblados_rural_disperso,2019
+Guainía,87.7,centros_poblados_rural_disperso,2019
+Guaviare,36.7,centros_poblados_rural_disperso,2019
+Vaupés,80.1,centros_poblados_rural_disperso,2019
+Vichada,84.0,centros_poblados_rural_disperso,2019
+Antioquia,14.9,total,2020
+Atlántico,14.1,total,2020
+Bogotá D.C.,7.5,total,2020
+Bolívar,28.1,total,2020
+Boyacá,11.7,total,2020
+Caldas,14.5,total,2020
+Caquetá,26.1,total,2020
+Cauca,28.2,total,2020
+Cesar,27.2,total,2020
+Córdoba,31.8,total,2020
+Cundinamarca,11.4,total,2020
+Chocó,49.0,total,2020
+Huila,23.4,total,2020
+La Guajira,51.7,total,2020
+Magdalena,33.4,total,2020
+Meta,14.1,total,2020
+Nariño,27.3,total,2020
+Norte de Santander,26.1,total,2020
+Quindío,12.9,total,2020
+Risaralda,13.1,total,2020
+Santander,12.5,total,2020
+Sucre,38.1,total,2020
+Tolima,19.0,total,2020
+Valle del Cauca,11.1,total,2020
+Arauca,26.1,total,2020
+Casanare,19.6,total,2020
+Putumayo,27.8,total,2020
+San Andrés,11.9,total,2020
+Amazonas,39.0,total,2020
+Guainía,65.9,total,2020
+Guaviare,34.6,total,2020
+Vaupés,65.6,total,2020
+Vichada,75.6,total,2020
+Antioquia,10.2,cabeceras,2020
+Atlántico,13.1,cabeceras,2020
+Bogotá D.C.,7.5,cabeceras,2020
+Bolívar,21.5,cabeceras,2020
+Boyacá,4.3,cabeceras,2020
+Caldas,8.7,cabeceras,2020
+Caquetá,18.4,cabeceras,2020
+Cauca,12.3,cabeceras,2020
+Cesar,20.7,cabeceras,2020
+Córdoba,21.8,cabeceras,2020
+Cundinamarca,9.4,cabeceras,2020
+Chocó,33.5,cabeceras,2020
+Huila,13.1,cabeceras,2020
+La Guajira,30.1,cabeceras,2020
+Magdalena,27.3,cabeceras,2020
+Meta,9.7,cabeceras,2020
+Nariño,15.0,cabeceras,2020
+Norte de Santander,20.8,cabeceras,2020
+Quindío,11.8,cabeceras,2020
+Risaralda,8.9,cabeceras,2020
+Santander,8.2,cabeceras,2020
+Sucre,29.5,cabeceras,2020
+Tolima,12.1,cabeceras,2020
+Valle del Cauca,8.9,cabeceras,2020
+Arauca,23.4,cabeceras,2020
+Casanare,14.3,cabeceras,2020
+Putumayo,22.6,cabeceras,2020
+San Andrés,11.9,cabeceras,2020
+Amazonas,24.3,cabeceras,2020
+Guainía,43.1,cabeceras,2020
+Guaviare,27.5,cabeceras,2020
+Vaupés,26.8,cabeceras,2020
+Vichada,46.6,cabeceras,2020
+Antioquia,32.7,centros_poblados_rural_disperso,2020
+Atlántico,33.9,centros_poblados_rural_disperso,2020
+Bogotá D.C.,15.4,centros_poblados_rural_disperso,2020
+Bolívar,47.1,centros_poblados_rural_disperso,2020
+Boyacá,22.4,centros_poblados_rural_disperso,2020
+Caldas,32.8,centros_poblados_rural_disperso,2020
+Caquetá,40.5,centros_poblados_rural_disperso,2020
+Cauca,37.4,centros_poblados_rural_disperso,2020
+Cesar,46.8,centros_poblados_rural_disperso,2020
+Córdoba,42.6,centros_poblados_rural_disperso,2020
+Cundinamarca,17.1,centros_poblados_rural_disperso,2020
+Chocó,61.5,centros_poblados_rural_disperso,2020
+Huila,39.0,centros_poblados_rural_disperso,2020
+La Guajira,72.7,centros_poblados_rural_disperso,2020
+Magdalena,47.0,centros_poblados_rural_disperso,2020
+Meta,28.2,centros_poblados_rural_disperso,2020
+Nariño,36.8,centros_poblados_rural_disperso,2020
+Norte de Santander,46.2,centros_poblados_rural_disperso,2020
+Quindío,21.0,centros_poblados_rural_disperso,2020
+Risaralda,29.5,centros_poblados_rural_disperso,2020
+Santander,26.6,centros_poblados_rural_disperso,2020
+Sucre,52.2,centros_poblados_rural_disperso,2020
+Tolima,34.0,centros_poblados_rural_disperso,2020
+Valle del Cauca,24.1,centros_poblados_rural_disperso,2020
+Arauca,31.1,centros_poblados_rural_disperso,2020
+Casanare,32.8,centros_poblados_rural_disperso,2020
+Putumayo,33.2,centros_poblados_rural_disperso,2020
+San Andrés,,centros_poblados_rural_disperso,2020
+Amazonas,53.5,centros_poblados_rural_disperso,2020
+Guainía,84.5,centros_poblados_rural_disperso,2020
+Guaviare,43.8,centros_poblados_rural_disperso,2020
+Vaupés,81.3,centros_poblados_rural_disperso,2020
+Vichada,85.1,centros_poblados_rural_disperso,2020
+Antioquia,14.3,total,2021
+Atlántico,15.5,total,2021
+Bogotá D.C.,5.7,total,2021
+Bolívar,26.8,total,2021
+Boyacá,10.9,total,2021
+Caldas,11.5,total,2021
+Caquetá,23.1,total,2021
+Cauca,18.6,total,2021
+Cesar,25.3,total,2021
+Córdoba,26.9,total,2021
+Cundinamarca,9.4,total,2021
+Chocó,36.0,total,2021
+Huila,17.5,total,2021
+La Guajira,48.7,total,2021
+Magdalena,32.4,total,2021
+Meta,14.9,total,2021
+Nariño,22.1,total,2021
+Norte de Santander,24.7,total,2021
+Quindío,10.9,total,2021
+Risaralda,10.7,total,2021
+Santander,13.3,total,2021
+Sucre,30.3,total,2021
+Tolima,16.6,total,2021
+Valle del Cauca,8.6,total,2021
+Arauca,26.8,total,2021
+Casanare,19.5,total,2021
+Putumayo,22.8,total,2021
+San Andrés,7.0,total,2021
+Amazonas,25.7,total,2021
+Guainía,57.3,total,2021
+Guaviare,31.0,total,2021
+Vaupés,52.7,total,2021
+Vichada,64.8,total,2021
+Antioquia,10.8,cabeceras,2021
+Atlántico,14.8,cabeceras,2021
+Bogotá D.C.,5.7,cabeceras,2021
+Bolívar,21.5,cabeceras,2021
+Boyacá,5.4,cabeceras,2021
+Caldas,8.7,cabeceras,2021
+Caquetá,15.9,cabeceras,2021
+Cauca,10.5,cabeceras,2021
+Cesar,20.8,cabeceras,2021
+Córdoba,14.1,cabeceras,2021
+Cundinamarca,8.1,cabeceras,2021
+Chocó,25.3,cabeceras,2021
+Huila,11.8,cabeceras,2021
+La Guajira,26.3,cabeceras,2021
+Magdalena,27.2,cabeceras,2021
+Meta,11.3,cabeceras,2021
+Nariño,13.4,cabeceras,2021
+Norte de Santander,19.7,cabeceras,2021
+Quindío,10.0,cabeceras,2021
+Risaralda,8.0,cabeceras,2021
+Santander,9.1,cabeceras,2021
+Sucre,23.7,cabeceras,2021
+Tolima,11.0,cabeceras,2021
+Valle del Cauca,6.9,cabeceras,2021
+Arauca,25.8,cabeceras,2021
+Casanare,16.4,cabeceras,2021
+Putumayo,16.5,cabeceras,2021
+San Andrés,7.0,cabeceras,2021
+Amazonas,23.0,cabeceras,2021
+Guainía,45.7,cabeceras,2021
+Guaviare,24.2,cabeceras,2021
+Vaupés,22.3,cabeceras,2021
+Vichada,38.3,cabeceras,2021
+Antioquia,28.0,centros_poblados_rural_disperso,2021
+Atlántico,29.6,centros_poblados_rural_disperso,2021
+Bogotá D.C.,19.4,centros_poblados_rural_disperso,2021
+Bolívar,41.8,centros_poblados_rural_disperso,2021
+Boyacá,19.1,centros_poblados_rural_disperso,2021
+Caldas,20.4,centros_poblados_rural_disperso,2021
+Caquetá,36.6,centros_poblados_rural_disperso,2021
+Cauca,23.2,centros_poblados_rural_disperso,2021
+Cesar,39.1,centros_poblados_rural_disperso,2021
+Córdoba,40.6,centros_poblados_rural_disperso,2021
+Cundinamarca,13.3,centros_poblados_rural_disperso,2021
+Chocó,44.4,centros_poblados_rural_disperso,2021
+Huila,26.1,centros_poblados_rural_disperso,2021
+La Guajira,70.7,centros_poblados_rural_disperso,2021
+Magdalena,43.7,centros_poblados_rural_disperso,2021
+Meta,26.4,centros_poblados_rural_disperso,2021
+Nariño,28.9,centros_poblados_rural_disperso,2021
+Norte de Santander,44.0,centros_poblados_rural_disperso,2021
+Quindío,17.1,centros_poblados_rural_disperso,2021
+Risaralda,21.5,centros_poblados_rural_disperso,2021
+Santander,27.3,centros_poblados_rural_disperso,2021
+Sucre,41.0,centros_poblados_rural_disperso,2021
+Tolima,29.0,centros_poblados_rural_disperso,2021
+Valle del Cauca,18.6,centros_poblados_rural_disperso,2021
+Arauca,28.7,centros_poblados_rural_disperso,2021
+Casanare,27.3,centros_poblados_rural_disperso,2021
+Putumayo,29.4,centros_poblados_rural_disperso,2021
+San Andrés,,centros_poblados_rural_disperso,2021
+Amazonas,28.4,centros_poblados_rural_disperso,2021
+Guainía,67.1,centros_poblados_rural_disperso,2021
+Guaviare,40.0,centros_poblados_rural_disperso,2021
+Vaupés,64.8,centros_poblados_rural_disperso,2021
+Vichada,73.4,centros_poblados_rural_disperso,2021
